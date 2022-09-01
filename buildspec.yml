@@ -4,16 +4,14 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - apt-get update -y
+     # - apt-get update -y
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - docker login -u User -p $LOGIN_PASSWORD
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - mvn install
   post_build:
     commands:
       - echo Entered the post_build phase...
