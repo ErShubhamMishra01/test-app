@@ -1,8 +1,10 @@
-version: 0.0
+version: 0.1
 os: linux
 files:
   - source: /
-    destination: /var/www/html/
+    destination: /var/www/html
+file_exists_behavior: OVERWRITE
+   
 #   - source: source
 #     destination: /webapps/myApp
 # hooks:
